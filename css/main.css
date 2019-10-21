@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*╤Б╨╕╨╜╨╕╨╣ ╨│╤А╨░╨┤╨╕╨╡╨╜╤В:
-linear-gradient(90deg, #0d1333, #132974)
+linear-gradient(90deg, #1d3137, #116666)
 
  */
 @font-face {
@@ -21,16 +21,35 @@ header {
   position: relative;
   padding: 0 20px; }
   header .logo-ico {
+    display: block;
     text-decoration: none;
-    font-size: 3rem;
-    padding: 20px;
-    color: #c4aa74;
-    font-family: "Monotype Corsiva", sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    color: #ca9d81;
+    font-family: "Proxima nova", sans-serif;
     position: absolute;
     z-index: 999; }
+    header .logo-ico .logo-img {
+      background: url(../media/logo-img-bronze.png) no-repeat center;
+      background-size: contain;
+      height: 70px;
+      width: 75px;
+      display: inline-block; }
     header .logo-ico h3 {
       display: inline-block;
-      margin: 0; }
+      margin: 0;
+      vertical-align: top;
+      position: relative; }
+    header .logo-ico p {
+      position: absolute;
+      top: 52%;
+      left: 41%;
+      font-size: .6em;
+      font-family: "Poiret One", cursive;
+      font-weight: bold;
+      letter-spacing: 0;
+      width: 100%; }
   header .logo-ico.active {
     position: fixed; }
   header .menu-bottom {
@@ -52,7 +71,7 @@ header {
       letter-spacing: 2px;
       text-transform: uppercase; }
     header .menu-bottom i {
-      color: #c4aa74;
+      color: #ca9d81;
       margin: 20px;
       font-size: 1.7em;
       transition: .2s; }
@@ -76,7 +95,7 @@ header {
       background-size: cover; }
     header .menu .menu-item {
       float: right;
-      background: #1d3137;
+      background: linear-gradient(90deg, #1d3137, #116666);
       width: 65vw;
       height: 100vh; }
 
@@ -106,7 +125,7 @@ header {
     margin: .5vh 0;
     opacity: inherit; }
   .link-item a:hover {
-    color: #c4aa74;
+    color: #ca9d81;
     transition: .2s; }
 
 .ico-item {
@@ -129,7 +148,7 @@ header {
     text-align: center;
     opacity: inherit; }
   .ico-item a:hover {
-    color: #c4aa74;
+    color: #ca9d81;
     transition: .2s; }
 
 .info-div {
@@ -169,6 +188,8 @@ header {
       font-size: 1.5em;
       font-family: "Poiret One", cursive;
       color: #7a838c; }
+  .info-div .info-div-text.bronzeborder {
+    border: 5px solid #ca9d81; }
 
 .menu.active {
   opacity: 1;
@@ -176,7 +197,7 @@ header {
   z-index: 500; }
 
 .menu-promo {
-  background: #1d3137 url(../media/pattern-left.svg) top left/460px repeat-y;
+  background: linear-gradient(90deg, #1d3137, #116666);
   color: #7a838c; }
   .menu-promo .brand-description {
     width: 60%;
@@ -197,7 +218,7 @@ header {
       font-size: 1.5rem;
       font-family: "Poiret One", cursive;
       font-weight: bold;
-      color: #c4aa74;
+      color: #ca9d81;
       margin-top: 20px;
       width: 80%; }
 
@@ -433,7 +454,7 @@ header {
       width: 10%;
       text-align: right;
       transition: .2s;
-      color: #c4aa74;
+      color: #ca9d81;
       font-size: 2em; }
     .item-one .item-one-name h4,
     .item-one .item-two-name h4,
@@ -635,7 +656,7 @@ header {
   width: 100%;
   padding: 60px 0;
   box-sizing: border-box;
-  background: #1d3137;
+  background: linear-gradient(90deg, #1d3137, #116666);
   height: 320px;
   text-align: center; }
   .info-bottom .info-bottom-border {
@@ -652,7 +673,7 @@ header {
     text-align: center; }
     .info-bottom a i {
       font-size: 3rem;
-      color: #c4aa74;
+      color: #ca9d81;
       margin-bottom: 20px; }
     .info-bottom a h4 {
       color: white;
@@ -668,11 +689,11 @@ header {
       font-weight: bold;
       transition: .2s; }
   .info-bottom a:hover > p {
-    color: #c4aa74;
+    color: #ca9d81;
     transition: .2s; }
 
 footer {
-  background: #1d3137;
+  background: linear-gradient(90deg, #1d3137, #116666);
   width: 100%;
   height: 350px; }
   footer .footer-all {
@@ -697,7 +718,7 @@ footer {
     padding: 40px calc(20px + 1vw);
     box-sizing: border-box;
     height: 150px;
-    border-bottom: 4px solid #c4aa74;
+    border-bottom: 4px solid #ca9d81;
     vertical-align: top; }
     footer .footer-left-top a,
     footer .footer-right-top a {
@@ -734,14 +755,18 @@ footer {
   footer .footer-center {
     display: inline-block;
     text-decoration: none;
-    color: #c4aa74;
+    color: #ca9d81;
     text-align: center;
-    font-family: "Monotype Corsiva", sans-serif;
-    text-transform: uppercase;
-    font-size: 2rem;
-    margin-top: 50px; }
-    footer .footer-center i {
-      font-size: 90px; }
+    font-family: "Proxima nova", sans-serif;
+    font-size: 1.5rem;
+    margin-top: 50px;
+    cursor: pointer; }
+    footer .footer-center .logo-footer {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background: url("../media/logo-footer.png") center no-repeat;
+      background-size: contain; }
 
 .catalogue {
   width: 100%;
@@ -882,11 +907,11 @@ footer {
       text-transform: uppercase;
       color: #fafafa;
       font-weight: bold;
-      background: #1d3137;
+      background: linear-gradient(90deg, #1d3137, #116666);
       text-align: center;
       line-height: 60px; }
     .elements .slim a:hover {
-      background: #c4aa74;
+      background: #ca9d81;
       transition: .2s; }
 
 .tape {
@@ -916,7 +941,7 @@ footer {
 .pre-footer {
   width: 100%;
   height: 100px;
-  background: #1d3137; }
+  background: linear-gradient(90deg, #1d3137, #116666); }
 
 .page-title {
   width: 100%;
@@ -939,17 +964,17 @@ footer {
 .page-description {
   width: 100%;
   height: 450px;
-  background: #1d3137 url(../media/pattern-left.svg) top left/460px repeat-y;
+  background: linear-gradient(90deg, #1d3137, #116666);
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px 5vw 20px 35vw;
+  padding: 50px 40px;
   box-sizing: border-box;
   text-align: justify; }
   .page-description p {
     font-size: 1.5em;
     font-family: "Poiret One", cursive;
-    color: #c4aa74;
+    color: #ca9d81;
     font-weight: bold; }
     .page-description p a {
       color: #fafafa; }
@@ -968,7 +993,7 @@ footer {
     height: 300px;
     margin: 50px 0; }
   .item-group a:hover > .item-img .item-description h4 {
-    color: #c4aa74;
+    color: #ca9d81;
     transition: .3s; }
 
 .item-img {
@@ -983,7 +1008,7 @@ footer {
     height: auto;
     padding: 20px;
     box-sizing: border-box;
-    background: #1d3137;
+    background: linear-gradient(90deg, #1d3137, #116666);
     left: 10%;
     top: 90%;
     z-index: 10;
@@ -1530,8 +1555,8 @@ footer {
       transition: .3s; }
     .map-message .message .send:hover {
       border: none;
-      background: #1d3137;
-      color: #c4aa74;
+      background: linear-gradient(90deg, #1d3137, #116666);
+      color: #ca9d81;
       transition: .3s; }
 
 .description-company {
@@ -1584,12 +1609,15 @@ footer {
 
 @media (min-width: 761px) and (max-width: 1215px) {
   header .logo-ico {
-    font-size: 2.2rem;
-    padding: 20px; }
+    font-size: 2rem;
+    padding: 0 20px; }
+    header .logo-ico .logo-img {
+      height: 60px;
+      width: 65px; }
   header .menu-bottom {
     right: 30px; }
   header .menu-bottom:hover i {
-    color: #c4aa74;
+    color: #ca9d81;
     transform: rotate(0deg); }
   header .menu .menu-item a {
     font-size: 1.25rem; }
@@ -1612,7 +1640,7 @@ footer {
           letter-spacing: 7px;
           line-height: 100%; }
   main .menu-promo {
-    background: #1d3137 url(../media/pattern-left.svg) top left -68px/210px repeat-y; }
+    background: linear-gradient(90deg, #1d3137, #116666); }
     main .menu-promo .brand-description {
       height: 350px;
       margin-left: 30vw; }
@@ -1746,8 +1774,7 @@ footer {
 
   .page-description {
     height: auto;
-    background: #1d3137 url(../media/pattern-left.svg) top left -68px/210px repeat-y;
-    padding: 20px 5vw 20px 25vw; }
+    background: linear-gradient(90deg, #1d3137, #116666); }
     .page-description p {
       font-size: 1.25rem; }
 
@@ -1810,7 +1837,7 @@ footer {
       footer .footer-all .footer-right-top a {
         margin-left: calc(10px + 1.5vw); }
       footer .footer-all .footer-center {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         margin-top: 20px; }
         footer .footer-all .footer-center i {
           font-size: 65px; }
@@ -1823,15 +1850,18 @@ footer {
           font-size: 1.125rem; } }
 @media screen and (max-width: 760px) {
   header .logo-ico {
-    font-size: 2.2rem;
-    padding: 20px; }
+    font-size: 1.5rem;
+    letter-spacing: 0; }
+    header .logo-ico .logo-img {
+      height: 45px;
+      width: 50px; }
   header .menu-bottom {
     right: 0;
     height: auto; }
     header .menu-bottom h3 {
       display: none; }
   header .menu-bottom:hover i {
-    color: #c4aa74;
+    color: #ca9d81;
     transform: rotate(0deg); }
   header .menu .menu-img {
     width: 0; }
@@ -1864,7 +1894,7 @@ footer {
           font-size: 1.15rem;
           padding: 0; }
   main .menu-promo {
-    background: #1d3137 url(../media/pattern-left.svg) top left -160px/210px repeat-y; }
+    background: linear-gradient(90deg, #1d3137, #116666); }
     main .menu-promo .brand-description {
       width: 80%;
       margin-left: 20vw;
@@ -2049,7 +2079,7 @@ footer {
       letter-spacing: 4px; }
 
   .page-description {
-    background: #1d3137 url(../media/pattern-left.svg) top left -160px/210px repeat-y;
+    background: linear-gradient(90deg, #1d3137, #116666);
     padding: 20px 20px 20px 20vw;
     height: auto; }
     .page-description p {
@@ -2165,10 +2195,11 @@ footer {
       display: block;
       width: 100%;
       margin-top: 20px; }
-      footer .footer-all .footer-center i {
-        font-size: 3rem; }
+      footer .footer-all .footer-center .logo-footer {
+        width: 75px;
+        height: 75px; }
       footer .footer-all .footer-center h4 {
-        font-size: 1rem; } }
+        font-size: 1.25rem; } }
 @media (min-width: 500px) and (max-width: 760px) {
   main .menu-promo .menu-section .item-one-name,
   main .menu-promo .menu-section .item-two-name,
@@ -2231,10 +2262,6 @@ footer {
       width: 70%;
       margin: 0 auto; } }
 @media screen and (max-width: 415px) {
-  header .logo-ico {
-    font-size: 2rem;
-    padding: 20px 0; }
-
   .item-img .item-description h4 {
     font-size: 1rem; }
 
@@ -2249,6 +2276,13 @@ footer {
     .item-back .item-div-img .item-div-text .table-d.right {
       font-size: .9rem; } }
 @media screen and (max-width: 350px) {
+  header .logo-ico {
+    font-size: 1.25rem;
+    letter-spacing: 0; }
+    header .logo-ico .logo-img {
+      height: 35px;
+      width: 40px; }
+
   .item-back .item-div-img .item-div-text .table-r p {
     font-size: 0.9rem; }
   .item-back .item-div-img .item-div-text .table-d.left {
