@@ -215,7 +215,7 @@ header {
     margin-left: 35vw;
     padding: 20px;
     box-sizing: border-box;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     justify-content: center; }
     .menu-promo .brand-description h4 {
@@ -1911,6 +1911,7 @@ footer {
     background: linear-gradient(90deg, #1d3137, #116666); }
     main .menu-promo .brand-description {
       width: 80%;
+      height: 300px;
       margin-left: 20vw; }
       main .menu-promo .brand-description h4 {
         font-size: 1.5rem;
