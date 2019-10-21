@@ -1613,6 +1613,7 @@ footer {
   box-sizing: border-box; }
   .diploma img {
     width: 30%;
+    height: 30%;
     margin: 10px;
     box-shadow: 1px 1px 15px 2px #515151; }
 
@@ -2173,7 +2174,8 @@ footer {
     margin-bottom: 10px; }
 
   .diploma img {
-    width: 40%; }
+    width: 40%;
+    height: 40%; }
 
   footer .footer-all {
     width: calc(100% - 40px);
