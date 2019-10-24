@@ -1294,6 +1294,26 @@ footer {
   background: url("../media/mannequins-woman-head-white-small.jpg") center no-repeat;
   background-size: cover; }
 
+.head-skincolor-blueeye {
+  background: url("../media/woman-head-skincolor-blueeye-small.jpg") center no-repeat;
+  background-size: cover; }
+
+.head-skincolor-browneye {
+  background: url("../media/woman-head-skincolor-browneye-small.jpg") center no-repeat;
+  background-size: cover; }
+
+.head-noface-black {
+  background: url("../media/head-noface-black-small.jpg") center no-repeat;
+  background-size: cover; }
+
+.head-noface-white {
+  background: url("../media/head-noface-white-small.jpg") center no-repeat;
+  background-size: cover; }
+
+.head-noface-skincolor {
+  background: url("../media/head-noface-skincolor-preview.jpg") center no-repeat;
+  background-size: cover; }
+
 .woman-foot-one {
   background: url("../media/woman-foot-one-small.jpg") center no-repeat;
   background-size: cover; }
@@ -1398,6 +1418,31 @@ footer {
   background: url("../media/handcarts-darkblue-small.jpg") center no-repeat;
   background-size: cover; }
 
+.send-status {
+  max-width: 1170px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Poiret One", cursive;
+  color: #7a838c;
+  margin: 0 auto;
+  padding: 40vh 0 50px 0; }
+
+.gotoback {
+  display: block;
+  height: 55px;
+  width: 270px;
+  color: #fafafa;
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Proxima nova", sans-serif;
+  background: #1e3e48;
+  font-weight: bold;
+  text-align: center;
+  line-height: 55px; }
+
 .item-div {
   background: none;
   padding: 0 0 100px 0;
@@ -1471,6 +1516,30 @@ footer {
         color: #7a838c;
         font-size: 1.45rem;
         width: 30%; }
+
+.change-img {
+  position: absolute;
+  right: 0;
+  width: 60px;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column; }
+  .change-img .top,
+  .change-img .bottom {
+    height: 50%;
+    background: #fafafa;
+    border: 2px solid #7a838c;
+    cursor: pointer; }
+    .change-img .top i,
+    .change-img .bottom i {
+      font-size: 2.5rem;
+      transition: .2s;
+      color: #1e3e48; }
+  .change-img .top:hover > i,
+  .change-img .bottom:hover > i {
+    color: #ca9d81;
+    transition: .2s; }
 
 .info-company {
   padding: 50px 0 0 10%;
