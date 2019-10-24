@@ -30,6 +30,8 @@ try {
     $mail->Password = 'europlastik3018';                           // SMTP password
     $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 465;                                    // TCP port to connect to
+	$mail->CharSet = 'UTF-8';
+	$mail->Encoding = 'base64'; 
     
     $mail->SMTPOptions = array(
 		'ssl' => array(
