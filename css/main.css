@@ -1154,6 +1154,10 @@ footer {
   background: url("../media/hangers-44-46a-small.jpg") center no-repeat;
   background-size: cover; }
 
+.hangers-winter {
+  background: url("../media/hangers-winter-small.jpg") center no-repeat;
+  background-size: cover; }
+
 .mannequins-man {
   background: url("../media/item-three.jpg") center no-repeat;
   background-size: cover; }
